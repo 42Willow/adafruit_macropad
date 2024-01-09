@@ -39,7 +39,7 @@ from utils.constants import (
     COLOR_WARNING,
     COLOR_WINDOWS,
     COLOR_WINMAN,
-    OS_WINDOWS,
+    OS_LINUX
 )
 
 
@@ -79,7 +79,7 @@ class AppSettings(KeyAppSettings):
         COLOR_SUBLIME_MERGE: 0x00B3B3,
         COLOR_TERMINAL: COLOR_10,
     }
-    host_os = OS_WINDOWS
+    host_os = OS_LINUX
 
 
 DEFAULT_APP = lambda app_pad: HomeApp(app_pad, AppSettings())
